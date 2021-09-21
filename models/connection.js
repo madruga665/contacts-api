@@ -1,10 +1,10 @@
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 
-const PASSWORD = process.env.PASSWORD;
+const { PASSWORD } = process.env;
 
 const connection = mysql.createPool({
-  user: 'root',
+  user: 'madruga665',
   password: PASSWORD,
   host: 'localhost',
   database: 'contacts_db',
